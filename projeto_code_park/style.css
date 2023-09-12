@@ -1,0 +1,37 @@
+body{
+    margin: auto;
+    padding: auto;
+}
+
+.container{
+   max-width: 85%;
+   margin: auto;
+}
+
+header{
+    text-align: center;
+    background-color: black;
+    color: indianred;
+    padding: 1px;
+    
+}
+
+main{
+    
+    background-color: indianred;
+    text-align: center;
+    padding: 20px;
+}
+
+
+section{
+    
+    display: inline-block;
+    
+       
+}
+
+figure{
+    
+    max-width: 320px;
+}
