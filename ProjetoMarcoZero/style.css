@@ -13,16 +13,17 @@
 }
 
 .titulo-principal{
+    display: flex;
     padding: 20px;
-    
     font-size: 2em;
     background-color: rgb(53, 53, 243);
     color: white;
-    display: flex;
+    justify-content: space-between;
+    
 }
 
 ul li{
-    margin-left: 250px;
+    
     
     list-style-type: none;
 }
