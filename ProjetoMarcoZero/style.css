@@ -14,11 +14,32 @@
 
 .titulo-principal{
     padding: 20px;
-    text-align: center;
+    
     font-size: 2em;
     background-color: rgb(53, 53, 243);
     color: white;
+    display: flex;
 }
+
+ul li{
+    margin-left: 250px;
+    
+    list-style-type: none;
+}
+
+ul{
+    margin-top: 18px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.t1{
+    margin-left: 20px;
+}
+
+
 
 main{
     background-color: rgb(197, 197, 116);
