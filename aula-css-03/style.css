@@ -4,11 +4,16 @@
   padding: 0;
 }
 
+body{
+  background-color: #6c3c9d;
+}
+
 header {
   background-color: lightgray;
   display: flex;
   justify-content: space-between;
   padding: 16px;
+  
   
 }
 
@@ -37,21 +42,14 @@ a{
 }
 
 main{
-  background-color: blueviolet;
-
-  
-
-}
-
-div{
-  background: url(./img/bg_laranja.jpg) no-repeat center;
-  width: 300px;
-  height: 200px;
-  border-radius: 10px;
-  padding: 20px;
-  text-align:justify;
+ 
   color: white;
+  padding-top: 16px;
+  padding-left: 12px;
+  width: 800px;
+  margin: 0 auto;
   
+
 }
 
 section{
@@ -65,30 +63,43 @@ section{
   
 }
 
+div{
+  background: url(./img/bg_laranja.jpg) no-repeat center;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 24px;
+  text-align:justify;
+ 
+  
+}
+
+
+
 aside{
-  margin: 0 40px;
+  margin: 0 10px;
   padding: 0 20px;
   padding-left: 70px;
    
 }
 
 h1{
-  font-size: 60px;
+  font-size: 3rem;
   font-weight: 800px;
-  padding-bottom: 0px;
+  padding-bottom: 20px;
   padding-top: 30px;
 }
 h2{
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 800px;
+  padding-bottom: 12px;
 }
 
-h1, h2{
-  color: white;
-}
+
 
 h3{
   margin-bottom: 30px;
+  font-size: 1.2rem;
 }
 
 
