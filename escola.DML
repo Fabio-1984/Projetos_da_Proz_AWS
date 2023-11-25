@@ -1,0 +1,44 @@
+create database escola;
+
+use escola;
+
+
+create table aluno(
+   id BIGINT(20) PRIMARY KEY AUTO_INCREMENT,
+   matricula INT NOT NULL,
+   nome VARCHAR(30) NOT NULL,
+   email VARCHAR(20) NOT NULL,
+   endereco VARCHAR(20) NOT NULL
+);
+
+create table emprestimo(
+   codigo BIGINT(20) PRIMARY KEY AUTO_INCREMENT,
+   data_hora DATETIME,
+   matric_aluno INT NOT NULL,
+   data_devolucao DATE,
+   constraint fk_matric_aluno foreign KEY (matri_aluno) REFERENCES aluno(maticula)
+);
+
+create table livro_emprestimo(
+   codigo_emprestimo,
+   codigo_livro
+   constraint fk_codigo_emprestimo foreign KEY (codigo_emprestimo) REFERENCES emprestimo(codigo)
+   constraint fk_codigo_livro foreign KEY (codigo_livro) REFERENCES livro(codigo_livro)
+);
+
+
+create table livro(
+   codigo_livro BIGINT(20) PRIMARY KEY,
+   titulo VARCHAR(30) NOT NULL,
+   autor VARCHAR(30) NOT NULL,
+   cod_sessao int NOT NULL,
+   constraint fk_cod_sessao foreign KEY (cod_sessao) REFERENCES sessao(codigo)
+);
+
+
+create table sessao(
+    codigo BIGINT(20) PRIMARY KEY,
+    descrcao VARCHAR(30) NOT NULL,
+    localizacao VARCHAR(30) NOT NULL
+
+);
